@@ -1,0 +1,26 @@
+2016-07-04 18:11:53 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_a83bf6d773c2]]></ToUserName>
+<FromUserName><![CDATA[orkfWjmrv5Px2g7dHdiU-ZIYrO-E]]></FromUserName>
+<CreateTime>1467626961</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>39.977818</Latitude>
+<Longitude>116.326279</Longitude>
+<Precision>65.000000</Precision>
+</xml>
+
+2016-07-04 18:11:53 params :
+------------
+Array:
+message : Array ;
+module : default ;
+rule : -1 ;
+
+2016-07-04 18:11:53 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+

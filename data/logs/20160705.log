@@ -1,0 +1,166 @@
+2016-07-05 12:44:17 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1467693858</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-07-05 12:44:17 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-07-05 12:44:17 response :
+------------
+
+2016-07-05 12:44:19 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1467693860</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[测试内容]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-07-05 12:44:19 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-07-05 12:44:19 response :
+------------
+
+2016-07-05 12:44:31 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1467693871</CreateTime><MsgType><![CDATA[text]]></MsgType><Content><![CDATA[点菜]]></Content><MsgId>1234567890123456</MsgId></xml>
+
+2016-07-05 12:44:31 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 12 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-05 12:44:31 response :
+------------
+Array:
+FromUserName : toUser ;
+ToUserName : fromUser ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-07-05 13:25:29 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_a83bf6d773c2]]></ToUserName>
+<FromUserName><![CDATA[orkfWjmrv5Px2g7dHdiU-ZIYrO-E]]></FromUserName>
+<CreateTime>1467696176</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[点菜]]></Content>
+<MsgId>6303707076796186715</MsgId>
+</xml>
+
+2016-07-05 13:25:29 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 12 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-05 13:25:29 response :
+------------
+Array:
+FromUserName : gh_a83bf6d773c2 ;
+ToUserName : orkfWjmrv5Px2g7dHdiU-ZIYrO-E ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-07-05 13:31:41 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_a83bf6d773c2]]></ToUserName>
+<FromUserName><![CDATA[orkfWjmrv5Px2g7dHdiU-ZIYrO-E]]></FromUserName>
+<CreateTime>1467696549</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[点菜]]></Content>
+<MsgId>6303708678818988207</MsgId>
+</xml>
+
+2016-07-05 13:31:41 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 12 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-05 13:31:41 response :
+------------
+Array:
+FromUserName : gh_a83bf6d773c2 ;
+ToUserName : orkfWjmrv5Px2g7dHdiU-ZIYrO-E ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-07-05 13:48:00 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_a83bf6d773c2]]></ToUserName>
+<FromUserName><![CDATA[orkfWjmrv5Px2g7dHdiU-ZIYrO-E]]></FromUserName>
+<CreateTime>1467697527</CreateTime>
+<MsgType><![CDATA[text]]></MsgType>
+<Content><![CDATA[门店列表]]></Content>
+<MsgId>6303712879297003957</MsgId>
+</xml>
+
+2016-07-05 13:48:00 params :
+------------
+Array:
+message : Array ;
+module : cover ;
+rule : 14 ;
+priority : 0 ;
+keyword : Array ;
+
+2016-07-05 13:48:00 response :
+------------
+Array:
+FromUserName : gh_a83bf6d773c2 ;
+ToUserName : orkfWjmrv5Px2g7dHdiU-ZIYrO-E ;
+MsgType : news ;
+ArticleCount : 1 ;
+Articles : Array ;
+
+2016-07-05 14:33:03 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_a83bf6d773c2]]></ToUserName>
+<FromUserName><![CDATA[orkfWjmrv5Px2g7dHdiU-ZIYrO-E]]></FromUserName>
+<CreateTime>1467700230</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[LOCATION]]></Event>
+<Latitude>39.911381</Latitude>
+<Longitude>116.245499</Longitude>
+<Precision>65.000000</Precision>
+</xml>
+
+2016-07-05 14:33:03 params :
+------------
+Array:
+message : Array ;
+module : default ;
+rule : -1 ;
+
+2016-07-05 14:33:03 response :
+------------
+Array:
+errno : -1 ;
+message : Invaild value ;
+

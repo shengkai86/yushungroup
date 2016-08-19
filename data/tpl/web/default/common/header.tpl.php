@@ -41,12 +41,12 @@
 
 				</li>
 
-				<!-- <li <?php  if($action == 'site') { ?>class="active"<?php  } ?>>
+				<li <?php  if($action == 'site') { ?>class="active"<?php  } ?>>
 
 					<a href="<?php  echo url('home/welcome/site');?>" target="_blank"><i class="fa fa-life-bouy"></i>
 						微站管理</a>
 
-				</li> -->
+				</li>
 
 				<li <?php  if($action == 'mc') { ?>class="active"<?php  } ?>>
 
@@ -325,7 +325,7 @@
 
 			<?php  if(!empty($frames)) { ?>
 
-				<!-- <div class="col-xs-12 col-sm-3 col-lg-2 big-menu">
+				<div class="col-xs-12 col-sm-3 col-lg-2 big-menu">
 
 					<div id="search-menu">
 
@@ -444,8 +444,8 @@
 					</script>
 
 				</div>
- -->
-				<div class="col-xs-12 col-sm-9 col-lg-12">
+ 
+				<div class="col-xs-12 col-sm-9 col-lg-10">
 
 					<?php  if(CRUMBS_NAV == 1) { ?>
 

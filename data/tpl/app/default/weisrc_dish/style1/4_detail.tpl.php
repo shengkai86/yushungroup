@@ -12,6 +12,18 @@
     <meta content="telephone=no" name="format-detection">
     <title>商家详情</title>
     <link data-turbolinks-track="true" href="<?php echo RES;?>/mobile/<?php  echo $this->cur_tpl?>/assets/diandanbao/weixin.css" media="all" rel="stylesheet">
+    <link data-turbolinks-track="true" href="<?php echo RES;?>mobile/<?php  echo $this->cur_tpl?>/assets/diandanbao/button.css" media="all" rel="stylesheet">
+  <!-- Buttons 库的核心文件 -->
+  <link rel="stylesheet" href="http://www.bootcss.com/p/buttons/css/buttons.css">
+
+  <!-- 当需要使用带下拉菜单的按钮时才需要加载下面的 JavaScript 文件 -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+  <script type="text/javascript" src="js/buttons.js"></script>
+
+  <!-- 只有使用字体图标时才需要加载 Font-Awesome -->
+  <link href="http://cdn.bootcss.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  
     <style type="text/css">@media screen {
         .smnoscreen {
             display: none
@@ -72,14 +84,80 @@
                     <?php  if(!empty($item['consume'])) { ?>
                     <span class="red ng-binding">￥<?php  echo $item['consume'];?></span>/人
                     <?php  } ?>
-                    <span class="button collection <?php  if(empty($collection)) { ?>border-green<?php  } ?>">
+                    <span class="button button-pill button-tiny collection <?php  if(empty($collection)) { ?>border-green<?php  } ?>">
 
                         <span class="ng-scope"><?php  if(empty($collection)) { ?>收藏<?php  } else { ?>已收藏<?php  } ?></span>
                     </span>
                 </div>
             </div>
         </div>
+        <!-- zhangsk -->
         <div class="operation-navs ng-scope">
+            <div class="operation-nav-item ng-scope <?php  if($item['is_reservation']!=1) { ?>inavailable<?php  } ?>">
+                <span class="button-wrap">
+                <a href="<?php  if($item['is_reservation']!=1) { ?>#<?php  } else { ?><?php  echo $this->createMobileUrl('reservationIndex', array('storeid' => $item['id'], 'mode' => 3), true)?><?php  } ?>" >
+                    <button class="button button-circle button-raised button-primary">
+                        <i class="fa fa-cloud"></i>
+                    </button>   
+                </a>
+                </span>
+                <div class="text ng-binding"><?php  echo $item['btn_reservation'];?></div>
+            </div>
+            <div class="operation-nav-item ng-scope <?php  if($item['is_meal']!=1) { ?>inavailable<?php  } ?>" onclick="$('#diaqrcode').removeClass('ng-hide');">
+                <span class="button-wrap">
+                <a href="#" >
+                    <button class="button button-circle button-raised button-primary">
+                        <i class="fa fa-cutlery"></i> 
+                    </button>
+                </a>
+                </span>
+                <div class="text ng-binding"><?php  echo $item['btn_eat'];?></div>
+            </div>
+            <div class="operation-nav-item ng-scope <?php  if($item['is_delivery']!=1) { ?>inavailable<?php  } ?>">
+                <span class="button-wrap">
+                <a href="<?php  if($item['is_delivery']!=1) { ?>#<?php  } else { ?><?php  echo $this->createMobileUrl('waplist', array('storeid' => $item['id'], 'mode' => 2), true)?><?php  } ?>" >
+                    <button class="button button-circle button-raised button-primary">
+                        <i class="fa fa-truck"></i> 
+                    </button>
+                </a>
+                </span>
+                <div class="text ng-binding"><?php  echo $item['btn_delivery'];?></div>
+            </div>
+        </div>
+        <div class="operation-navs ng-scope">
+            <div class="operation-nav-item ng-scope <?php  if($item['is_snack']!=1) { ?>inavailable<?php  } ?>">
+                <span class="button-wrap">
+                <a href="<?php  if($item['is_snack']!=1) { ?>#<?php  } else { ?><?php  echo $this->createMobileUrl('waplist', array('storeid' => $item['id'], 'mode' => 4), true)?><?php  } ?>">
+                    <button class="button button-circle button-raised button-primary">
+                        <i class="fa fa-delicious"></i>
+                    </button> 
+                </a>
+                </span>
+                <div class="text ng-binding"><?php  echo $item['btn_snack'];?></div>
+            </div>
+            <div class="operation-nav-item ng-scope <?php  if($item['is_queue']!=1) { ?>inavailable<?php  } ?>" onclick="$('#diaqrcode').removeClass('ng-hide');">
+                <span class="button-wrap">
+                <button href="<?php  if($item['is_queue']!=1) { ?>#<?php  } else { ?><?php  echo $this->createMobileUrl('queue', array('storeid' => $item['id']), true)?><?php  } ?>">
+                    <button class="button button-circle button-raised button-primary">
+                        <i class="fa fa-weixin"></i> 
+                    </button>
+                </button>
+                </span>
+                <div class="text ng-binding"><?php  echo $item['btn_queue'];?></div>
+            </div>
+            <div class="operation-nav-item ng-scope <?php  if($item['is_intelligent']!=1) { ?>inavailable<?php  } ?>">
+                <span class="button-wrap">
+                <button href="<?php  if($item['is_intelligent']!=1) { ?>#<?php  } else { ?><?php  echo $this->createMobileUrl('wapselect', array('storeid' => $item['id']), true)?><?php  } ?>">
+                    <button  class="button button-circle button-raised button-primary">
+                        <i class="fa fa-bell"></i>
+                    </button> 
+                </button>
+                </span>
+                <div class="text ng-binding"><?php  echo $item['btn_intelligent'];?></div>
+            </div>
+        </div>
+        <!-- lj -->
+        <!-- <div class="operation-navs ng-scope">
             <div class="operation-nav-item ng-scope <?php  if($item['is_reservation']!=1) { ?>inavailable<?php  } ?>">
                 <a href="<?php  if($item['is_reservation']!=1) { ?>#<?php  } else { ?><?php  echo $this->createMobileUrl('reservationIndex', array('storeid' => $item['id'], 'mode' => 3), true)?><?php  } ?>">
                     <div class="icon red ng-scope"><i class="fa fa-dot-circle-o"></i></div>
@@ -99,6 +177,8 @@
                     <div class="text ng-binding"><?php  echo $item['btn_delivery'];?></div>
                 </a>
             </div>
+        </div>
+        <div class="operation-navs ng-scope">
             <div class="operation-nav-item ng-scope <?php  if($item['is_snack']!=1) { ?>inavailable<?php  } ?>">
                 <a href="<?php  if($item['is_snack']!=1) { ?>#<?php  } else { ?><?php  echo $this->createMobileUrl('waplist', array('storeid' => $item['id'], 'mode' => 4), true)?><?php  } ?>">
                     <div class="icon red ng-scope"><i class="fa fa-delicious"></i></div>
@@ -117,7 +197,7 @@
                     <div class="text ng-binding"><?php  echo $item['btn_intelligent'];?></div>
                 </a>
             </div>
-        </div>
+        </div> -->
         <?php  if(!empty($item['announce'])) { ?>
         <div class="notification-section">
             <div class="notice">

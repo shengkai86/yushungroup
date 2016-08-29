@@ -1,0 +1,22 @@
+2016-08-17 15:47:02 trace :
+------------
+String:
+<xml><ToUserName><![CDATA[gh_9339a8df8927]]></ToUserName>
+<FromUserName><![CDATA[o57ktv7CJLoP7Xnud2D0xinBkSm0]]></FromUserName>
+<CreateTime>1471419849</CreateTime>
+<MsgType><![CDATA[event]]></MsgType>
+<Event><![CDATA[VIEW]]></Event>
+<EventKey><![CDATA[http://y15c274072.iask.in/app/index.php?i=4&c=entry&do=waprestList&m=weisrc_dish]]></EventKey>
+<MenuId>452713243</MenuId>
+</xml>
+
+2016-08-17 15:47:02 params :
+------------
+Array:
+rule : -2 ;
+module :  ;
+message : Array ;
+
+2016-08-17 15:47:02 response :
+------------
+

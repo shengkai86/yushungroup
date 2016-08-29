@@ -137,21 +137,21 @@
             </div>
             <div class="operation-nav-item ng-scope {if $item['is_queue']!=1}inavailable{/if}" onclick="$('#diaqrcode').removeClass('ng-hide');">
                 <span class="button-wrap">
-                <button href="{if $item['is_queue']!=1}#{else}{php echo $this->createMobileUrl('queue', array('storeid' => $item['id']), true)}{/if}">
+                <a href="{if $item['is_queue']!=1}#{else}{php echo $this->createMobileUrl('queue', array('storeid' => $item['id']), true)}{/if}">
                     <button class="button button-circle button-raised button-primary">
                         <i class="fa fa-weixin"></i> 
                     </button>
-                </button>
+                </a>
                 </span>
                 <div class="text ng-binding">{$item['btn_queue']}</div>
             </div>
             <div class="operation-nav-item ng-scope {if $item['is_intelligent']!=1}inavailable{/if}">
                 <span class="button-wrap">
-                <button href="{if $item['is_intelligent']!=1}#{else}{php echo $this->createMobileUrl('wapselect', array('storeid' => $item['id']), true)}{/if}">
+                <a href="{if $item['is_intelligent']!=1}#{else}{php echo $this->createMobileUrl('wapselect', array('storeid' => $item['id']), true)}{/if}">
                     <button  class="button button-circle button-raised button-primary">
                         <i class="fa fa-bell"></i>
                     </button> 
-                </button>
+                </a>
                 </span>
                 <div class="text ng-binding">{$item['btn_intelligent']}</div>
             </div>
